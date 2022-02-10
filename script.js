@@ -4,24 +4,40 @@ const texto = document.createElement('div');
 const imagem = document.createElement('img');
 
 const carregar = (async () => {
-const json = await fetch(url);
-const data = await json.json();
+const response = await fetch(url);
+const data = await response.json();
 const array = await Object.values(data);
-for(let key of array[0]) {
-  let personagem = {
-    nome: key.name,
-    url: key.url,
-    img: key.imageUrl,
-  };
-  imagem.src = personagem.img;
-  texto.innerText = `Nome: ${personagem.nome}`;
-  test.appendChild(texto);
-  test.appendChild(imagem);
-    console.log(personagem);
-  }
-  // console.log(array[0]);
+const personagens = array[0];
+  return personagens
 });
 
+// RENDERS
+
+const renderPersonagens = (personagem) => {
+  const personagemCards = document.querySelector('.personagensCard');
+
+  personagem.forEach((persona) => {
+    const section = document.createElement('section');
+    section.className = 'persona';
+    section.id = persona.name;
+
+    const paragraph = document.createElement('p');
+    paragraph.className = 'persona-title';
+    paragraph.innerHTML = persona.name;
+
+    const img = document.createElement('img');
+    img.className = 'persona-image';
+    img.src = persona.imageUrl;
+
+    section.appendChild(paragraph);
+    section.appendChild(img);
+
+    personagemCards.appendChild(section);
+  });
+};
+
 window.onload = async () => {
-  await carregar();
+  const personagens = await carregar();
+  renderPersonagens(personagens);
+
 }
