@@ -1,2 +1,2 @@
-# RappiTrybe
-The best app RappiTrybe
+# DisneyAlbums-Trybe
+The best app DisneyAlbums-Trybe
