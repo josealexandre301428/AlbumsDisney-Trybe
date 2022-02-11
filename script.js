@@ -25,3 +25,4 @@ for(let key of array[0]) {
 window.onload = async () => {
   await carregar();
 }
+282787
