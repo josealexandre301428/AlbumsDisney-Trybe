@@ -47,9 +47,10 @@ const renderPersonagens = async (personagem) => {
   ;
 };
 
-const criaInformacoes = async (personagem) => {
-  const personagemCards = document.querySelector('.personagensCard');
-  console.log(personagem);
+window.onload = async () => {
+  const personagens = await carregar();
+  renderPersonagens(personagens);
+  console.log(personagens);
 
   const section = document.createElement('section');
   section.className = 'informacoes';
