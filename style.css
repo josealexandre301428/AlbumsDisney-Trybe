@@ -1,3 +1,59 @@
-img {
-  height: 200px;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.disney {
+  margin-top: 10px;
+  font-family: 'WaltographRegular';
+  font-weight: normal;
+  font-style: normal;
+}
+
+.s {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(51,105,232);
+
+}
+.e {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(213,15,37);
+}
+
+.a {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(238,178,17);
+}
+
+.r {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(51,105,232);
+}
+
+.c {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(0,153,57);
+}
+
+.h {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(213,15,37);
+}
+
+h1 {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.input-group input-group-lg {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
