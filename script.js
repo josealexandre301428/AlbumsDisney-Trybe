@@ -39,5 +39,6 @@ const renderPersonagens = (personagem) => {
 window.onload = async () => {
   const personagens = await carregar();
   renderPersonagens(personagens);
+  console.log(personagens);
 
 }
