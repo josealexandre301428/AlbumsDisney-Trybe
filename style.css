@@ -59,19 +59,11 @@ h1 {
   font-size: 3rem;
 }
 
-section {
-  margin-top: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 div {
-  margin-top: 20px;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -82,15 +74,24 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1rem;
+}
+
+section {
+  margin-top: 10px;
+  /* display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  align-content: center; */
 }
 
 .personagensCard {
-  margin-top: 50px;
-  margin: 100px;
+  margin-top: 1px;
+  margin: 10px;
   display: flex;
   flex-direction: row;
-  align-content: space-between;
+  align-items: baseline;
+  align-content: center;
 }
 
 .botao:hover {
@@ -104,21 +105,14 @@ h2 {
 }
 
 .informacoes {
-  margin-block-end: 300px;
-  margin: 100px;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
+  margin-block-end: 10px;
+  margin: 10px;
+  text-align: center;
 }
 
 .personagem {
   margin-block-end: 300px;
   margin: 10px;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
 }
 
 .personagem-image {
