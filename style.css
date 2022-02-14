@@ -62,8 +62,13 @@ h1 {
   font-size: 3rem;
 }
 
+header {
+  margin-bottom: 75px;
+}
+
 div {
   margin-top: 10px;
+  margin-bottom: 30px;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -81,22 +86,30 @@ h5 {
   justify-content: center;
   align-items: center;
   font-size: 1rem;
+  text-align: center;
 }
 
 section {
   margin-top: 10px;
+  margin-bottom: 30px;
   height: 200px;
-  background-color: white;
 
 }
 
-.personagensCard {
+
+/*.personagensCard {
   display: flex;
   margin-top: 1px;
   margin: 10px;
   align-items: baseline;
   align-content: center;
   justify-content: space-between;
+}*/
+
+.personagensCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center
 }
 
 .botao:hover {
@@ -118,10 +131,16 @@ section {
 .personagem {
   margin-block-end: 30px;
   max-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center
 }
 
 .personagem-image {
   border-radius: 10px;
   box-shadow: 4px 2px 2px black;
-  max-height: 150px;
+  max-height:200px;
+  max-width:200px;
+  margin: 0 auto;
+  
 }
