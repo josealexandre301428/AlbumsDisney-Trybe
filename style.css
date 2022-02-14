@@ -52,6 +52,7 @@ p {
 
 h1 {
   margin-top: 10px;
+  display: flex;
   justify-content: center;
   align-items: center;
   font-size: 3rem;
@@ -59,6 +60,13 @@ h1 {
 
 div {
   margin-top: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.divBotao{
+  margin-top: 10px;
+  display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
