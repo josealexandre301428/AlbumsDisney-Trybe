@@ -87,6 +87,7 @@ section {
 }
 
 .botao:hover {
+  transition: 300ms;
   background-color: rgb(103, 103, 105);
   padding: 10px;
 }
@@ -107,7 +108,7 @@ section {
 }
 
 .personagem-image {
-  /* border-radius: 10px; */
-  /* box-shadow: 8px 5px 3px black; */
+  border-radius: 10px;
+  box-shadow: 4px 2px 2px black;
   max-height: 150px;
 }
