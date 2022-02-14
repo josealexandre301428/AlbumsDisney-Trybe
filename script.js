@@ -143,15 +143,15 @@ const validaGames = async (personagem) => {
 const criaInformacoes = async (personagem) => {
   const personagemCards = document.querySelector('.personagensCard');
   const section = document.createElement('section');
-  section.className = 'informacoes container border shadow col-8';
+  section.className = 'informacoes container border shadow';
   
   const titulo = document.createElement('h5');
-  titulo.className = 'informacoes-title col-8';
+  titulo.className = 'informacoes-title';
   titulo.id = 'titulo'
   titulo.innerHTML = 'Informações';
   
   const paragraph = document.createElement('p');
-  paragraph.className = 'informacoes-texto col-8'
+  paragraph.className = 'informacoes-texto'
   paragraph.innerHTML = `Olá mundo, eu sou ${personagem.name}!`;
   section.appendChild(titulo);
   section.appendChild(paragraph);

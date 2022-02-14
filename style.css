@@ -5,12 +5,9 @@
 }
 
 body {
-  background-color: rgb(187, 187, 187) !important;
+  background-color: rgb(238, 238, 238) !important;
 }
 
-/*header {
-  background-image: linear-gradient(to right, rgb(255, 255, 255) , rgb(23, 78, 116));
-}*/
 
 .disney {
   margin-top: 10px;
@@ -81,6 +78,7 @@ h5 {
 section {
   margin-top: 10px;
   height: 200px;
+  background-color: white;
 
 }
 
@@ -110,7 +108,7 @@ section {
 }
 
 .personagem {
-  margin-block-end: 300px;
+  margin-block-end: 30px;
   max-height: 200px;
 }
 
