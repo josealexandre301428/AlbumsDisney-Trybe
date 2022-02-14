@@ -21,8 +21,8 @@ const validaFilmes = async (personagem) => {
   const filmes = await personagem.films;
   if(filmes.length !== 0){
     const section = document.createElement('section');
-      section.className = 'filmes';
-    const titulo = document.createElement('h2');
+      section.className = 'filmes container border shadow';
+    const titulo = document.createElement('h5');
       titulo.className = 'filmes-title';
       titulo.innerHTML = 'Quais filmes ja participei?';
     
@@ -38,8 +38,8 @@ const validaFilmes = async (personagem) => {
     personagemCards.appendChild(section);
   } else {
     const section = document.createElement('section');
-      section.className = 'filmes';
-    const titulo = document.createElement('h2');
+      section.className = 'filmes container border shadow';
+    const titulo = document.createElement('h5');
       titulo.className = 'filmes-title';
       titulo.innerHTML = 'Nunca participei de nenhum filme';
       section.appendChild(titulo);
@@ -52,8 +52,8 @@ const validaSeries = async (personagem) => {
   const series = await personagem.tvShows;
   if(series.length !== 0){
     const section = document.createElement('section');
-      section.className = 'series';
-    const titulo = document.createElement('h2');
+      section.className = 'series container border shadow';
+    const titulo = document.createElement('h5');
       titulo.className = 'series-title';
       titulo.innerHTML = 'Quais series ja participei?';
     
@@ -69,8 +69,8 @@ const validaSeries = async (personagem) => {
     personagemCards.appendChild(section);
   } else {
     const section = document.createElement('section');
-      section.className = 'series';
-    const titulo = document.createElement('h2');
+      section.className = 'series container border shadow';
+    const titulo = document.createElement('h5');
       titulo.className = 'series-title';
       titulo.innerHTML = 'Nunca participei de nenhuma serie';
       section.appendChild(titulo);
@@ -83,8 +83,8 @@ const validaCurtas = async (personagem) => {
   const curtas = await personagem.shortFilms;
   if(curtas.length !== 0){
     const section = document.createElement('section');
-      section.className = 'curtas';
-    const titulo = document.createElement('h2');
+      section.className = 'curtas container border shadow';
+    const titulo = document.createElement('h5');
       titulo.className = 'curtas-title';
       titulo.innerHTML = 'Quais curtas ja participei?';
     
@@ -100,8 +100,8 @@ const validaCurtas = async (personagem) => {
     personagemCards.appendChild(section);
   } else {
     const section = document.createElement('section');
-      section.className = 'curtas';
-    const titulo = document.createElement('h2');
+      section.className = 'curtas container border shadow';
+    const titulo = document.createElement('h5');
       titulo.className = 'curtas-title';
       titulo.innerHTML = 'Nunca participei de nenhum curta';
       section.appendChild(titulo);
@@ -114,15 +114,15 @@ const validaGames = async (personagem) => {
   const jogos = await personagem.shortFilms;
   if(jogos.length !== 0){
     const section = document.createElement('section');
-      section.className = 'jogos';
-    const titulo = document.createElement('h2');
+      section.className = 'jogos container border shadow';
+    const titulo = document.createElement('h5');
       titulo.className = 'jogos-title';
       titulo.innerHTML = 'Quais jogos ja participei?';
     
     const lista = document.createElement('ul');
     const itemLista = await jogos.forEach((jogo) => {
     const item = document.createElement('li');
-      item.className = 'listjogo';
+      item.className = 'listjogo container border shadow';
       item.innerText = jogo;
       lista.appendChild(item);
     });
@@ -131,8 +131,8 @@ const validaGames = async (personagem) => {
     personagemCards.appendChild(section);
   } else {
     const section = document.createElement('section');
-      section.className = 'jogos';
-    const titulo = document.createElement('h2');
+      section.className = 'jogos container border shadow';
+    const titulo = document.createElement('h5');
       titulo.className = 'jogos-title';
       titulo.innerHTML = 'Nunca participei de nenhum jogo';
       section.appendChild(titulo);
@@ -143,9 +143,9 @@ const validaGames = async (personagem) => {
 const criaInformacoes = async (personagem) => {
   const personagemCards = document.querySelector('.personagensCard');
   const section = document.createElement('section');
-  section.className = 'informacoes';
+  section.className = 'informacoes container border shadow';
   
-  const titulo = document.createElement('h2');
+  const titulo = document.createElement('h5');
   titulo.className = 'informacoes-title';
   titulo.id = 'titulo'
   titulo.innerHTML = 'Informações';
@@ -175,15 +175,15 @@ const renderPersonagens = async (personagem) => {
   const personagemNumero = personagemAleatorio(0, 49);
   
   const section = document.createElement('section');
-  section.className = 'personagem';
+  section.className = 'personagem container border shadow';
   section.id = personagem[personagemNumero].name;
   
-  const paragraph = document.createElement('h2');
+  const paragraph = document.createElement('h5');
   paragraph.className = 'personagem-title';
   paragraph.innerHTML = personagem[personagemNumero].name;
   
   const img = document.createElement('img');
-  img.className = 'personagem-image';
+  img.className = 'personagem-image rounded';
   img.src = personagem[personagemNumero].imageUrl;
   
   section.appendChild(paragraph);
