@@ -2,8 +2,15 @@
   padding: 0;
   margin: 0px;
   box-sizing: border-box;
-  background-color: rgb(238, 238, 238);
 }
+
+body {
+  background-color: rgb(187, 187, 187) !important;
+}
+
+/*header {
+  background-image: linear-gradient(to right, rgb(255, 255, 255) , rgb(23, 78, 116));
+}*/
 
 .disney {
   margin-top: 10px;
