@@ -114,13 +114,16 @@ section {
 
 .botao:hover {
   transition: 300ms;
-  background-color: rgb(103, 103, 105);
+  background-color: rgb(50, 76, 116);
   padding: 10px;
 }
 
 .botao {
-  background-color: rgb(182, 182, 182);
+  color: aliceblue;
+  background-color: rgb(62, 97, 148);
   padding: 10px;
+  border-radius: 15px;
+  border-color: rgb(66, 125, 153);
 }
 
 .informacoes {
