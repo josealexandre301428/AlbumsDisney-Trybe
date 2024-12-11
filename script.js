@@ -12,8 +12,6 @@ const geraAleatorio = ((min, max) => {
 
 const carregar = async () => {
   const promise = await fetch(url);
-  console.log(promise);
-  
   const data = await promise.json();
   renderPersonagens(data.data);
 };
