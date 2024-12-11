@@ -6,12 +6,14 @@ const geraAleatorio = ((min, max) => {
   min = Math.ceil(min);
   max = Math.floor(max);
   numero =  Math.floor(Math.random() * (max - min + 1)) + min;
-  url = `https://api.disneyapi.dev/characters?page=${numero}`;
+  url = `https://api.disneyapi.dev/character?page=${numero}`;
 }
 );
 
 const carregar = async () => {
   const promise = await fetch(url);
+  console.log(promise);
+  
   const data = await promise.json();
   renderPersonagens(data.data);
 };
@@ -194,6 +196,6 @@ const renderPersonagens = async (personagem) => {
 };
 
 window.onload = async () => {
-  await geraAleatorio(1, 150);
+  await geraAleatorio(2, 150);
   await carregar();
 }
